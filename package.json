@@ -1,0 +1,19 @@
+{
+  "name": "notes-web-scratch",
+  "version": "1.0.0",
+  "description": "Tinkering with React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuGO0/notes-web-scratch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuGO0/notes-web-scratch/issues"
+  },
+  "homepage": "https://github.com/LuGO0/notes-web-scratch#readme"
+}
