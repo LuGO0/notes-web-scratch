@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/LuGO0/notes-web-scratch/issues"
   },
-  "homepage": "https://github.com/LuGO0/notes-web-scratch#readme"
+  "homepage": "https://github.com/LuGO0/notes-web-scratch#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
 }
