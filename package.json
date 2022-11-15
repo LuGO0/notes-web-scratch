@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Tinkering with React",
   "main": "index.js",
-  "scripts": { 
-    "format": "prettier --write \"src/**/*.{js,jsx}\"" 
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "format": "prettier --write \"src/**/*.{js,jsx}\""
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,11 @@
   },
   "homepage": "https://github.com/LuGO0/notes-web-scratch#readme",
   "devDependencies": {
+    "parcel": "^1.12.3",
     "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
