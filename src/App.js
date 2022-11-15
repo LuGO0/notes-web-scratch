@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM  from "react-dom";
+import ReactDOM from "react-dom";
 
 // adding ./ is important since it thinks its a node module otherwise
 import Pet from "./Pet";
