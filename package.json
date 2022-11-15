@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/LuGO0/notes-web-scratch#readme",
   "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
     "parcel": "^1.12.3",
     "prettier": "^2.7.1"
   },

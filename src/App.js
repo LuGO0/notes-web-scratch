@@ -1,10 +1,8 @@
-const Pet = () => {
-  return React.createElement("div", {}, [
-    React.createElement("h2", {}, "heading2"),
-    React.createElement("h3", {}, "headisng31"),
-    React.createElement("h3", {}, "heading32"),
-  ]);
-};
+import React from "react";
+import ReactDOM  from "react-dom";
+
+// adding ./ is important since it thinks its a node module otherwise
+import Pet from "./Pet";
 
 // this creates a component that can be rendered
 const App = () => {
