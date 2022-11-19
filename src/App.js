@@ -19,11 +19,18 @@ import Pet from "./Pet";
 // };
 
 // JSX
+
+// first I will make it work then refactor it to include everything in seperate useful files.
+
 const App = () => {
     return (
         <div>
-            <h1>foo</h1>
-            <Pet /** all properties go here */></Pet>
+            <form>
+                <input type="text" placeholder="title"/>
+                <input type="text" placeholder="details"/>
+
+                <button>Submit</button>
+            </form>
         </div>
     )
 }
