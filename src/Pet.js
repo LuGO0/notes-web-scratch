@@ -10,13 +10,13 @@ import React from "react";
 
 // rewrite in Babel
 const Pet = () => {
-    return (
-        <div>
-            <h2>heading2</h2>
-            <h3>heading31</h3>
-            <h3>heading32</h3>
-        </div>
-    )
-}
+  return (
+    <div>
+      <h2>heading2</h2>
+      <h3>heading31</h3>
+      <h3>heading32</h3>
+    </div>
+  );
+};
 
 export default Pet;

@@ -39,18 +39,17 @@ import SearchParams from "./SearchParams";
 // }
 
 const App = () => {
-    return (
-        <div>
-            <form>
-                <input type="text" placeholder="title"/>
-                <input type="text" placeholder="details"/>
-                <SearchParams/>
-                <button>Submit</button>
-            </form>
-        </div>
-    )
-}
-
+  return (
+    <div>
+      <form>
+        <input type="text" placeholder="title" />
+        <input type="text" placeholder="details" />
+        <SearchParams />
+        <button>Submit</button>
+      </form>
+    </div>
+  );
+};
 
 // render it now.
 ReactDOM.render(App(), document.getElementById("root"));
