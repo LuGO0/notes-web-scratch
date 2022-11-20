@@ -22,6 +22,21 @@ import Pet from "./Pet";
 
 // first I will make it work then refactor it to include everything in seperate useful files.
 
+// const URL = "https://dog.ceo/api/breeds/image/random";
+
+// function addNewDog() {
+//     const promise = fetch(URL);
+//     promise
+//     .then(function (response) {
+//         const process = response.text;
+//         console.log(process);
+//         return process;
+//     })
+//     .then(function (responseProcessed) {
+//         const dog = JSON.parse(responseProcessed);
+//     });
+// }
+
 const App = () => {
     return (
         <div>
@@ -34,6 +49,7 @@ const App = () => {
         </div>
     )
 }
+
 
 // render it now.
 ReactDOM.render(App(), document.getElementById("root"));
