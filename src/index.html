@@ -12,10 +12,21 @@
 
     <!--CSS-->   
     <link rel="stylesheet" href="style.css">
+
+
+    <!--
+        This would work here as well but since root div hasnt been created yet it wont render anything 
+        <script type="text/javascript" src="App.js"></script> 
+    -->
 </head>
 <body>
     <!--empty div for react to render--> 
     <div id="root">not rendered</div>
+
+    <!--
+        we usually add script tags at the end of the HTML doc so as to not stop parsing the dom tree and give users a hanging experience
+        but with recent async and defer attributes it can be added anywhere now.
+    -->
     <script src="App.js"></script>
 
 </body>
