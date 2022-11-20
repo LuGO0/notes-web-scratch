@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 
 // adding ./ is important since it thinks its a node module otherwise
 import Pet from "./Pet";
+import SearchParams from "./SearchParams";
 
 // this creates a component that can be rendered
 
@@ -43,7 +44,7 @@ const App = () => {
             <form>
                 <input type="text" placeholder="title"/>
                 <input type="text" placeholder="details"/>
-
+                <SearchParams/>
                 <button>Submit</button>
             </form>
         </div>
