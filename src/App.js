@@ -45,7 +45,6 @@ const App = () => {
         <input type="text" placeholder="title" />
         <input type="text" placeholder="details" />
         <SearchParams />
-        <button>Submit</button>
       </form>
     </div>
   );
