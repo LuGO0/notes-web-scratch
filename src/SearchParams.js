@@ -12,20 +12,19 @@ const SearchParams = () => {
   const [breed, setBreed] = useState("");
   const [pets, setPets] = useState([]);
   //const breeds = [];
-  const [breeds] = useBreedList(animal)
+  const [breeds] = useBreedList(animal);
   console.log(breeds);
-  useEffect(function() {
+  useEffect(function () {
     requestPets();
     // return () => clear if you have to do any clean up
-  },[]); 
+  }, []);
   // if you pass in [animal] only request pets when animal state changes,
   // if you pass in [] then it will be only called once and never again.
-
 
   async function requestPets() {
     console.log(`pets requested ${location}`);
     const res = await fetch(
-        `http://pets-v2.dev-apis.com/pets?animal=${animal}&location=
+      `http://pets-v2.dev-apis.com/pets?animal=${animal}&location=
         ${location}&breed=${breed}`
     );
 
@@ -35,14 +34,12 @@ const SearchParams = () => {
     setPets(json.pets);
   }
 
-
   // const [location, setLocation] = useState("Patna"); same as above ^
 
   function updateLocation(e) {
     console.log(e.target.value);
     setLocation(e.target.value);
   }
-
 
   return (
     <div className="search-params">
@@ -62,10 +59,10 @@ const SearchParams = () => {
             id="animals"
             value={animal}
             onChange={(e) => {
-                console.log("animal change"+ e.target.value);
+              console.log("animal change" + e.target.value);
               setAnimal(e.target.value);
             }}
-            onBlur={(e) => { 
+            onBlur={(e) => {
               setAnimal(e.target.value);
             }}
           >
@@ -80,14 +77,16 @@ const SearchParams = () => {
           </select>
         </label>
         <div>
-        {pets.map( pet => {
+          {pets.map((pet) => {
             console.log(pet.name);
-            return (<text>{pet.name}</text>);
-        })}
-      </div>
-      <button type="button" onClick={requestPets}>Submit</button>
+            return <text>{pet.name}</text>;
+          })}
+        </div>
+        <button type="button" onClick={requestPets}>
+          Submit
+        </button>
       </form>
-     </div>
+    </div>
   );
 };
 
