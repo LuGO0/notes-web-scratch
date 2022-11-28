@@ -41,11 +41,9 @@ import SearchParams from "./SearchParams";
 const App = () => {
   return (
     <div>
-      <form>
         <input type="text" placeholder="title" />
         <input type="text" placeholder="details" />
-        <SearchParams />
-      </form>
+        <SearchParams />    
     </div>
   );
 };
